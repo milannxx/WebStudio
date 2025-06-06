@@ -5,6 +5,22 @@
     box-sizing: border-box;
 }
 
+.header {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header_container {
+    width: 100%;
+    max-width: 519px;
+}
+
+.header_container--nav {
+    width: 100%;
+    max-width: 281px;
+}
+
 .header_container--nav--link {
     font-family: Roboto;
     font-weight: 500;
@@ -13,6 +29,11 @@
     letter-spacing: 2%;
     color: #212121;
     text-decoration: none;
+}
+
+.header_content {
+    width: 100%;
+    max-width: 307px;
 }
 
 .header_content--email {
@@ -105,6 +126,29 @@
     letter-spacing: 3%;
     text-align: center;
     color: #212121;
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+
+.team_container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 94px;
+}
+
+.team_container--card {
+    width: 100%;
+    max-height: 270px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px #00000033;
+    box-shadow: 0px 1px 1px 0px #00000024;
+    box-shadow: 0px 1px 3px 0px #0000001F;
+}
+
+.team_container--card--img {
+    width: 270px;
 }
 
 .team_container--card--name {
@@ -115,6 +159,8 @@
     letter-spacing: 3%;
     text-align: center;
     color: #212121;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team_container--card--profession {
@@ -125,6 +171,8 @@
     letter-spacing: 3%;
     text-align: center;
     color: #757575;
+    margin-top: 30px;
+    padding-bottom: 10px;
 }
 
 .footer_container {
