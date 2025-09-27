@@ -46,12 +46,28 @@
 
 .header_content {
     width: 100%;
-    max-width: 307px;
+    max-width: 333px;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .header_content--email {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header_content--email--svg {
+    fill: #757575;
+}
+
+.header_content--email:hover .header_content--email--svg {
+    fill: #2196F3; 
+    cursor: pointer;
+}
+
+.header_content--email--link {
     font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
@@ -61,12 +77,27 @@
     color: #757575;
 }
 
-.header_content--email:hover {
+.header_content--email:hover .header_content--email--link {
     color: #2196F3;
     cursor: pointer;
 }
 
 .header_content--phone {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header_content--phone--svg {
+    fill: #757575;
+}
+
+.header_content--phone:hover .header_content--phone--svg {
+    fill: #2196F3;
+    cursor: pointer;
+}
+
+.header_content--phone--link {
     font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
@@ -76,7 +107,7 @@
     text-decoration: none;
 }
 
-.header_content--phone:hover {
+.header_content--phone:hover .header_content--phone--link {
     color: #2196F3;
     cursor: pointer;
 }
@@ -135,6 +166,12 @@
     border: 1px solid #EEEEEE;
 }
 
+.content_card:hover {
+    box-shadow: 1px 4px 6px 0px #00000029;
+    box-shadow: 0px 4px 4px 0px #0000000F;
+    box-shadow: 0px 1px 1px 0px #0000001F;
+}
+
 .content_card--title {
     font-family: Roboto;
     font-weight: 700;
@@ -155,22 +192,29 @@
     padding: 0px 24px 20px;
 }
 
-footer {
+footer { 
     background-color: #2F303A;
 }
 
 .footer_container {
     width: 100%;
     max-width: 1170px;
-    padding: 60px 0px;
     margin: 0 auto;
+    margin-top: 94px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
 }
 
-.footer_container img {
-    padding-bottom: 20px;
+.footer_container--boxFirst {
+    padding: 60px 0px;
 }
 
-.footer_container--adress {
+.footer_container--boxFirst img {
+    margin-bottom: 20px;
+}
+
+.footer_container--boxFirst--adress {
     font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
@@ -182,7 +226,7 @@ footer {
     padding-bottom: 9px;
 }
 
-.footer_container--email {
+.footer_container--boxFirst--email {
     font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
@@ -194,7 +238,7 @@ footer {
     padding-bottom: 9px;
 }
 
-.footer_container--phone {
+.footer_container--boxFirst--phone {
     font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
@@ -203,4 +247,45 @@ footer {
     color: #757575;
     text-decoration: none;
     display: flex;
+}
+
+.footer_container--boxSecond {
+    width: 100%;
+    max-width: 206px;
+}
+
+.footer_container--boxSecond--text {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer_container--boxSecond--apps {
+    width: 100%;
+    max-width: 206px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_container--boxSecond--apps--content {
+    background-color: #FFFFFF1A;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_container--boxSecond--apps--content:hover {
+    background-color: #2196F3;
+}
+
+.footer_container--boxSecond--apps--content--svg {
+    fill: #FFFFFF;
 }
