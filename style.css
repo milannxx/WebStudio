@@ -479,3 +479,41 @@ footer {
 .footer_container--boxSecond--apps--content--svg {
     fill: #FFFFFF;
 }
+
+.whatWeDo_container--box {
+    position: relative;
+}
+
+.whatWeDo_container--box--title {
+    position: absolute;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #2F303ACC;
+    bottom: 0;
+    padding: 27px 106px;
+    width: 100%;
+    max-width: 370px;
+}
+
+.whatWeDo_container--box--titleThird {
+    position: absolute;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #2F303ACC;
+    bottom: 0;
+    padding: 27px 94px;
+    width: 100%;
+    max-width: 370px;
+}
