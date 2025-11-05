@@ -242,6 +242,44 @@
     justify-content: space-between;
 }
 
+.whatWeDo_container--box {
+    position: relative;
+}
+
+.whatWeDo_container--box--title {
+    position: absolute;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #2F303ACC;
+    bottom: 0;
+    padding: 27px 106px;
+    width: 100%;
+    max-width: 370px;
+}
+
+.whatWeDo_container--box--titleThird {
+    position: absolute;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #2F303ACC;
+    bottom: 0;
+    padding: 27px 94px;
+    width: 100%;
+    max-width: 370px;
+}
+
 .team {
     background-color: #F5F4FA;
 }
@@ -416,7 +454,7 @@ footer {
     margin-top: 94px;
     display: flex;
     align-items: center;
-    gap: 70px;
+    justify-content: space-between;
 }
 
 .footer_container--boxFirst {
@@ -494,6 +532,7 @@ footer {
     align-items: center;
     justify-content: center;
     transition: 500ms ease-in-out;
+    cursor: pointer;
 }
 
 .footer_container--boxSecond--apps--content:hover {
@@ -504,42 +543,66 @@ footer {
     fill: #FFFFFF;
 }
 
-.whatWeDo_container--box {
-    position: relative;
+.footer_container--bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.whatWeDo_container--box--title {
-    position: absolute;
+.footer_container--bottom--form--label {
     font-family: Roboto;
     font-weight: 700;
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 3%;
-    text-align: center;
     text-transform: uppercase;
-    color: white;
-    background-color: #2F303ACC;
-    bottom: 0;
-    padding: 27px 106px;
-    width: 100%;
-    max-width: 370px;
+    color: #fff;
 }
 
-.whatWeDo_container--box--titleThird {
-    position: absolute;
+.footer_container--bottom--form--box  {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.footer_container--bottom--form--box--input {
+    width: 358px;
+    height: 50px;
+    outline: none;
+    border: 1px solid #FFFFFF4D;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3%;
+    vertical-align: middle;
+    color: #FFFFFF99;
+}
+
+.footer_container--bottom--form--box--button {
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    box-shadow: 0px 4px 4px 0px #00000026;
     font-family: Roboto;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 3%;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 6%;
     text-align: center;
-    text-transform: uppercase;
-    color: white;
-    background-color: #2F303ACC;
-    bottom: 0;
-    padding: 27px 94px;
-    width: 100%;
-    max-width: 370px;
+    vertical-align: middle;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 28px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
 }
 
 body.no-scroll {
@@ -593,7 +656,7 @@ body.no-scroll {
     width: 100%;
     max-width: 528px;
     background: #fff;
-    border-radius: 12px;
+    border-radius: 4px;
     padding: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
 }
