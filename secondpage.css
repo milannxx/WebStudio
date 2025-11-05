@@ -37,11 +37,28 @@
     letter-spacing: 2%;
     color: #212121;
     text-decoration: none;
+    position: relative;
 }
 
 .header_container--nav--link:hover {
     color: #2196F3;
     cursor: pointer;
+}
+
+.header_container--nav--link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -25.5px;
+    width: 0;
+    height: 4px;
+    background: #2196F3;
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+  
+.header_container--nav--link:hover::after {
+    width: 100%;
 }
 
 .header_content {
@@ -56,10 +73,12 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    transition: color 0.6s ease;
 }
 
 .header_content--email--svg {
     fill: #757575;
+    transition: color 0.6s ease;
 }
 
 .header_content--email:hover .header_content--email--svg {
@@ -75,6 +94,7 @@
     letter-spacing: 2%;
     text-decoration: none;
     color: #757575;
+    transition: color 0.6s ease;
 }
 
 .header_content--email:hover .header_content--email--link {
@@ -95,6 +115,7 @@
 .header_content--phone:hover .header_content--phone--svg {
     fill: #2196F3;
     cursor: pointer;
+    transition: color 0.6s ease;
 }
 
 .header_content--phone--link {
@@ -105,6 +126,7 @@
     letter-spacing: 2%;
     color: #757575;
     text-decoration: none;
+    transition: color 0.6s ease;
 }
 
 .header_content--phone:hover .header_content--phone--link {
@@ -142,6 +164,7 @@
     border-radius: 4px;
     padding: 6px 25px;
     margin-right: 8px;
+    transition: 500ms ease-in-out;
 }
 
 .container_content--button:hover {
@@ -164,9 +187,34 @@
     width: 100%;
     max-width: 370px;
     border: 1px solid #EEEEEE;
+    position: relative;
+    transition: 0.3s ease;
 }
 
-.content_card:hover {
+.content_card::after {
+    content: "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #2196F3E5;
+    z-index: 10;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 3%;
+    color: #fff;
+    text-align: left;
+    padding: 67px 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+  .content_card:hover::after {
+    opacity: 1;
+}
+
+  .content_card:hover {
     box-shadow: 1px 4px 6px 0px #00000029;
     box-shadow: 0px 4px 4px 0px #0000000F;
     box-shadow: 0px 1px 1px 0px #0000001F;
@@ -280,6 +328,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 500ms ease-in-out;
+    cursor: pointer;
 }
 
 .footer_container--boxSecond--apps--content:hover {
