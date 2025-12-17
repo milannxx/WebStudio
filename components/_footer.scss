@@ -1,0 +1,160 @@
+.footer {
+    background-color: #2F303A;
+
+    &_container {
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+        margin-top: 94px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--boxFirst {
+            padding: 60px 0px;
+
+            &--image {
+                margin-bottom: 20px;
+            }
+
+            &--adress {
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 3%;
+                color: #FFFFFF; 
+                text-decoration: none;  
+                display: flex; 
+                padding-bottom: 9px;
+            } 
+            &--email {
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 3%;
+                color: #757575;
+                text-decoration: none;
+                display: flex;
+                padding-bottom: 9px;
+            } 
+
+            &--phone {
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 3%;
+                color: #757575;
+                text-decoration: none;
+                display: flex;
+            }
+        } 
+
+        &--boxSecond {
+            width: 100%;
+            max-width: 206px;
+
+            &--text {
+                font-family: Roboto;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 3%;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-bottom: 20px;
+            }
+
+            &--apps {
+                width: 100%;
+                max-width: 206px;
+                display: flex;
+                justify-content: space-between;
+
+                &--content {
+                    background-color: #FFFFFF1A;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 500ms ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #2196F3;
+                    }
+
+                    &--svg {
+                        fill: #FFFFFF;
+                    }
+                }
+            } 
+        } 
+        
+        &--bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &--form--label {
+                font-family: Roboto;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 3%;
+                text-transform: uppercase;
+                color: #fff;
+            }
+
+            &--form--box  {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-top: 20px;
+
+                &--input {
+                    width: 358px;
+                    height: 50px;
+                    outline: none;
+                    border: 1px solid #FFFFFF4D;
+                    box-shadow: 0px 4px 4px 0px #00000026;
+                    border-radius: 4px;
+                    background-color: transparent;
+                    padding-left: 16px;
+                    font-family: Roboto;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 3%;
+                    vertical-align: middle;
+                    color: #FFFFFF99;
+                }
+
+                &--button {
+                    background-color: #2196F3;
+                    box-shadow: 0px 4px 4px 0px #00000026;
+                    box-shadow: 0px 4px 4px 0px #00000026;
+                    font-family: Roboto;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: 6%;
+                    text-align: center;
+                    vertical-align: middle;
+                    color: #fff;
+                    border: none;
+                    border-radius: 4px;
+                    padding: 10px 28px;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
