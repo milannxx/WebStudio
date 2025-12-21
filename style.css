@@ -593,10 +593,10 @@ body.no-scroll {
   bottom: 0;
   z-index: -1;
 }
-.overlay .modal-active {
+.overlay.modal-active {
   display: flex;
 }
-.overlay .show {
+.overlay.show {
   display: flex;
 }
 
@@ -635,10 +635,10 @@ body.no-scroll {
 .modal__close:hover {
   color: #2196F3;
 }
-.modal__close__body {
+.modal__body {
   margin: 12px 0 20px;
 }
-.modal__close__body--title {
+.modal__body--title {
   font-family: Roboto;
   font-weight: 700;
   font-size: 20px;
@@ -659,7 +659,7 @@ body.no-scroll {
   margin: 0 auto;
   margin-bottom: 30px;
 }
-.modal__footer--checkboxspan {
+.modal__footer--checkbox span {
   font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
@@ -688,7 +688,7 @@ body.no-scroll {
 .form__holder:hover svg {
   fill: #2196F3;
 }
-.form__holderlabel {
+.form__holder label {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
@@ -696,27 +696,27 @@ body.no-scroll {
   margin-bottom: 4px;
   color: #757575;
 }
-.form__holderinput,
+.form__holder input,
 .form__holder textarea {
   padding: 11px 12px 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.form__holdertextarea {
+.form__holder textarea {
   resize: none;
   height: 120px;
   padding: 12px 16px;
 }
-.form__holdertextarea:hover {
+.form__holder textarea:hover {
   border-color: #2196F3;
 }
-.form__holdertextarea:hover ::-moz-placeholder {
+.form__holder textarea:hover ::-moz-placeholder {
   color: #2196F3;
 }
-.form__holdertextarea:hover ::placeholder {
+.form__holder textarea:hover ::placeholder {
   color: #2196F3;
 }
-.form__holdertextarea::-moz-placeholder {
+.form__holder textarea::-moz-placeholder {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
@@ -724,7 +724,7 @@ body.no-scroll {
   letter-spacing: 1%;
   color: rgba(117, 117, 117, 0.5019607843);
 }
-.form__holdertextarea::placeholder {
+.form__holder textarea::placeholder {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
@@ -736,7 +736,7 @@ body.no-scroll {
   outline: none;
   border-color: #2196F3;
 }
-.form__holdersvg {
+.form__holder svg {
   position: absolute;
   top: 29px;
   left: 15px;
