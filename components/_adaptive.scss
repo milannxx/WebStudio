@@ -1,0 +1,240 @@
+@media (max-width:1120px) {
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 770px;
+        gap: 30px;
+
+        &_card {
+            max-width: 354px;
+
+            & img {
+                padding: 25px 142px;
+            }
+
+            &--text {
+                width: 336px;
+            }
+        }
+    }
+
+    .whatWeDo {
+        display: none;
+    }
+
+    .team {
+
+        &_container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 768px;
+            gap: 30px;
+
+            &--card {
+                max-width: 354px;
+                height: 534px;
+
+                &--img {
+                    width: 354px;
+                    height: 374px;
+                }
+
+                &--profession {
+                    padding-bottom: 16px;
+                }
+
+                &--content {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+
+    .clients {
+        &_container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+
+            &--box {
+                max-width: 226px;
+                height: 92px;
+                padding: 0 !important;
+                display: flex;
+                align-items: center;
+
+                &--svg {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:985px) {
+    .footer {
+
+        &_container {
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-right: 15px;
+            padding-left: 15px;
+
+            &--boxFirst {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &--boxSecond {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &--bottom {
+                padding-top: 60px;
+
+                &--label {
+                    width: 450px;
+                }
+
+                &--form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &--box {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:870px) {
+
+        .header {
+            margin: 15px auto;
+
+            &_content {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+    .solution {
+        background-image: url(../img/870px-adaptive-bg.png);
+
+        &_container {
+
+            &--title {
+                font-size: 26px;
+                width: 360px;
+                line-height: 42px;
+                padding-top: 118px;
+            }
+
+            &--button {
+                margin-bottom: 118px;
+            }
+        }
+    }
+}
+
+@media (max-width: 755px) {
+    .header {
+        margin: 10px auto;
+        
+        &_menu {
+            display: block;
+            border: none;
+            background-color: transparent;
+        }
+
+        &_container {
+
+            &--nav {
+                display: none;
+            }
+        }
+
+        &_content {
+            display: none;
+        }
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_card {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            max-width: 450px;
+
+            & img {
+                padding: 25px 190px;
+            }
+
+            &--text {
+                width: 450px;
+            }
+        }
+    }
+
+    .team {
+
+        &_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &--card {
+                max-width: 450px;
+                height: 622px;
+
+                &--img {
+                    width: 450px;
+                    height: 460px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:520px) {
+
+    .solution {
+        background-image: url(../img/520px-adaptive-bg.png);
+    }
+
+    .clients {
+
+        &_container {
+            grid-template-columns: 1fr 1fr;
+
+            &--box {
+                max-width: 210px;
+            }
+        }
+    }
+
+    .footer {
+        &_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+
+            &--bottom {
+                padding: 0;
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-.footer { 
+.footer {
     background-color: #2F303A;
 
     &_container {
@@ -9,14 +9,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 60px 0px;
 
         &--boxFirst {
-            padding: 60px 0px;
 
             &--image {
                 margin-bottom: 20px;
             }
-        
+
             &--adress {
                 font-family: Roboto;
                 font-weight: 400;
@@ -27,8 +27,7 @@
                 text-decoration: none;  
                 display: flex; 
                 padding-bottom: 9px;
-            }
-
+            } 
             &--email {
                 font-family: Roboto;
                 font-weight: 400;
@@ -39,8 +38,8 @@
                 text-decoration: none;
                 display: flex;
                 padding-bottom: 9px;
-            }
-    
+            } 
+
             &--phone {
                 font-family: Roboto;
                 font-weight: 400;
@@ -51,8 +50,8 @@
                 text-decoration: none;
                 display: flex;
             }
-        }
-        
+        } 
+
         &--boxSecond {
             width: 100%;
             max-width: 206px;
@@ -93,9 +92,9 @@
                         fill: #FFFFFF;
                     }
                 }
-            }
-        }
-
+            } 
+        } 
+        
         &--bottom {
             display: flex;
             flex-direction: column;

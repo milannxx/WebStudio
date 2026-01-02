@@ -2,6 +2,7 @@
     background-image: url(img/peopls.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0 15px;
 
     &_container {
         display: flex;
@@ -19,7 +20,6 @@
             text-transform: uppercase;
             color: #FFFFFF;
             width: 610px;
-            margin: 0 auto;
             padding-top: 200px;
             padding-bottom: 30px;
         }
@@ -47,7 +47,7 @@
 .info {
     width: 100%;
     max-width: 1170px;
-    padding: 94px 0px;
+    padding: 94px 15px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -88,8 +88,9 @@
 .whatWeDo {
     width: 100%;
     max-width: 1170px;
-    padding-bottom: 94px;
+    margin-bottom: 94px;
     margin: 0 auto;
+    padding: 0 15px;
 
     &_title {
         font-family: Roboto;
@@ -148,6 +149,7 @@
 
 .team {
     background-color: #F5F4FA;
+    padding: 0 15px;
 
     &_title {
         font-family: Roboto;
@@ -245,6 +247,7 @@
     max-width: 1170px;
     margin: 0 auto;
     margin-top: 94px;
+    padding: 0 15px;
 
     &_title {
         font-family: Roboto;

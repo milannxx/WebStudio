@@ -1,0 +1,37 @@
+@media (max-width:770px) {
+
+    .modal {
+        max-width: 450px;
+
+        &__body {
+
+            &--title {
+                width: 370px;
+                line-height: 30px;
+                margin: 0 auto;
+            }
+        }
+
+        &_form {
+
+            &__holder {
+                width: 100%;
+                max-width: 370px;
+            }
+
+            &--link {
+                font-size: 12px;
+            }
+        }
+
+        &__footer {
+
+            &--checkbox {
+
+                & span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
